@@ -10,7 +10,7 @@ const CreateStory = () => {
     return (
         <div>
             <h1>Hello, CreateStory</h1>
-            <p>{storyOne}</p>
+            <p>{storyOne[2]}</p>
             <p>{step}</p>
             <p>{answers}</p>
 
