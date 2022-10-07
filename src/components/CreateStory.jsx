@@ -15,7 +15,7 @@ class CreateStory extends React.Component {
         this.setState({value: event.target.value})
     }
     handleSubmit(event) {
-        alert("Submitment of " + this.state.value)
+        alert("Submitment of Poo in the form of " + this.state.value)
     }
 
     render() {
