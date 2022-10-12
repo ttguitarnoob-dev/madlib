@@ -7,11 +7,9 @@ const CreateStory = () => {
     const [answers, setAnswers] = useState([])
     const [input, setInput] = useState('')
     const stupid = storyOne[0].thing
-    let round = 2
-    let poo = answers.length
+    let currentRound = answers.length
 
     const handleSubmit = (event) => {
-        round = round + 123434
         event.preventDefault()
         setInput('')
         setAnswers([...answers, event.target[0].value])
@@ -27,7 +25,7 @@ const CreateStory = () => {
         <div>
             <h1>Hello</h1>
             <form onSubmit={handleSubmit} >
-                <label>Enter {storyOne[poo].thing}</label>
+                <label>Enter {storyOne[currentRound].thing}</label>
                 <input type="text" value={input} onChange={handleChange} />
                 <input type="submit" value="Submit" />
             </form>
