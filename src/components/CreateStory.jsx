@@ -5,12 +5,16 @@ import React from "react";
 
 const CreateStory = () => {
     const [answers, setAnswers] = useState([])
+    const stupid = storyOne[0]
+    var round = 0
 
     const handleSubmit = (event) => {
         event.preventDefault()
         console.log('event?', event.target[0].value)
         setAnswers([...answers, event.target[0].value])
         console.log('stat', answers)
+        console.log('omg', stupid)
+        
     }
 
 
@@ -18,7 +22,7 @@ const CreateStory = () => {
         <div>
             <h1>Hello</h1>
             <form onSubmit={handleSubmit}>
-                <label>Enter Noun</label>
+                <label>Enter {storyOne[0].key} </label>
                 <input type="text" />
                 <input type="submit" value="Submit" />
             </form>
