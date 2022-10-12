@@ -5,25 +5,35 @@ import React from "react";
 
 const CreateStory = () => {
     const [answers, setAnswers] = useState([])
-    const stupid = storyOne[0]
-    var round = 0
+    const [input, setInput] = useState('')
+    const stupid = storyOne[0].thing
+    let round = 2
+    let poo = answers.length
 
     const handleSubmit = (event) => {
+        round = round + 123434
         event.preventDefault()
         console.log('event?', event.target[0].value)
+        setInput('')
         setAnswers([...answers, event.target[0].value])
-        console.log('stat', answers)
-        console.log('omg', stupid)
         
+        console.log('stat', answers)
+        console.log('omg', round)
+        
+    }
+
+    const handleChange = (event) => {
+        setInput(event.target.value)
+        console.log('changed', input)
     }
 
 
     return (
         <div>
             <h1>Hello</h1>
-            <form onSubmit={handleSubmit}>
-                <label>Enter {storyOne[0].key} </label>
-                <input type="text" />
+            <form onSubmit={handleSubmit} >
+                <label>Enter {storyOne[poo].thing}</label>
+                <input type="text" value={input} onChange={handleChange} />
                 <input type="submit" value="Submit" />
             </form>
         </div>

@@ -1,15 +1,15 @@
 export const storyOne = [
     {
-        0:'Character Name'
+        thing:'Character Name'
 
     },
     {
-        1:'Noun'
+        thing:'Noun'
     },
     {
-        2:'Adjective'
+        thing:'Adjective'
     },
     {
-        3:'Noun'
+        thing:'Noun'
     }
 ]
