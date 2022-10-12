@@ -13,13 +13,8 @@ const CreateStory = () => {
     const handleSubmit = (event) => {
         round = round + 123434
         event.preventDefault()
-        console.log('event?', event.target[0].value)
         setInput('')
         setAnswers([...answers, event.target[0].value])
-        
-        console.log('stat', answers)
-        console.log('omg', round)
-        
     }
 
     const handleChange = (event) => {
