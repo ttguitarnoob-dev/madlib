@@ -23,9 +23,9 @@ const CreateStory = () => {
 
     return (
         <div>
-            <h1>Hello</h1>
+            <h1>Please Enter {storyOne[currentRound].thing}</h1>
             <form onSubmit={handleSubmit} >
-                <label>Enter {storyOne[currentRound].thing}</label>
+                {/* <label>Enter {storyOne[currentRound].thing}</label> */}
                 <input type="text" value={input} onChange={handleChange} />
                 <input type="submit" value="Submit" />
             </form>

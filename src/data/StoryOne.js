@@ -1,15 +1,69 @@
 export const storyOne = [
     {
-        thing:'Character Name'
+        thing:'a Character Name'
 
     },
     {
-        thing:'Noun'
+        thing:'a Noun'
     },
     {
-        thing:'Adjective'
+        thing:'an Adjective'
     },
     {
-        thing:'Noun'
-    }
+        thing:'something that has a pungent odor'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
+    {
+        thing:'a Noun'
+    },
 ]
