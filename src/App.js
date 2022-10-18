@@ -12,10 +12,11 @@ function App() {
         <h1>The Slightly Frustrated Lib</h1>
       </header>
       <main>
-        <Routes>
+        <CreateStory/>
+        {/* <Routes>
         <Route path='/' element={ <Home/>}/>
         <Route path='/create-story' element={ <CreateStory/>}/>
-        </Routes>
+        </Routes> */}
       </main>
     </div>
   );

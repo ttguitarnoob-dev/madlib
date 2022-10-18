@@ -4,15 +4,19 @@ import React from "react";
 
 
 const CreateStory = () => {
+    const stupid = storyOne
     const [answers, setAnswers] = useState([])
     const [input, setInput] = useState('')
-    const stupid = storyOne[0].thing
+    
+    //this one works because we start at round 0, and answers.lenght is 0 to begin
     let currentRound = answers.length
+    console.log('stupid', stupid)
 
     const handleSubmit = (event) => {
         event.preventDefault()
         setInput('')
         setAnswers([...answers, event.target[0].value])
+        console.log('answered', answers)
     }
 
     const handleChange = (event) => {
